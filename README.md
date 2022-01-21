@@ -49,18 +49,19 @@ bin/kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic test1
 ```
 
 **Creating Producers and Consumers**
-- create a producer using the following command 
+- Create a producer using the following command 
 ```
 bin/kafka-console-producer.sh --topic test1 --broker-list localhost:9092
 ```
 
 
-- create a consumer using the following command:
+- Create a consumer using the following command:
 ```
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test1
 ```
 This one recieves messages sent live, but does not find all messages previously sent
 
+- To get results from the beginning of the brokers log enter:
 ```
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test1 --from-beginning
 ```
