@@ -3,7 +3,10 @@ This includes a tutorial to have kafka set up on a computer
 
 **Installing Kafka**
 - Clone down this repository to make file available for kafka set up 
-- Kafka requires Java to run properly. Check to see if computer has java installed using command ```java -version```
+- Kafka requires Java to run properly. Check to see if computer has java installed using command 
+```
+java -version
+```
 - if java doesn't exist, use the following command to installjava in the system.
 ```
 brew install homebrew/cask/java
